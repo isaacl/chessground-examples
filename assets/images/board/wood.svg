@@ -22,11 +22,13 @@
     
 </defs>
 
-<image x:href="dark.jpg" width="800" height="400"/>
-<image x:href="dark.jpg" y="-800" width="800" height="400" transform="scale(1, -1)"/>
+<image x:href="walnut.jpg" width="800" height="400" id="l"/>
+<use x:href="#l" y="-800" transform="scale(1, -1)"/>
 
-<image href="walnut.jpg" x:href="walnut.jpg" width="800" height="400" clip-path="url(#dark)" />
-<g transform="translate(0, 400)" clip-path="url(#dark)" >
-  <image y="-400" width="800" height="400" x:href="walnut.jpg" transform="scale(1, -1)" />
+<g clip-path="url(#dark)">
+    <image id="d" x:href="dark.jpg" width="800" height="400" />
+</g>
+<g transform="translate(0, 400)" clip-path="url(#dark)">
+  <use x:href="#d" y="-400" transform="scale(1, -1)" />
 </g>
 </svg>
