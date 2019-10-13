@@ -91,6 +91,7 @@ cg-board square.current-premove {
   background-size: cover;
   z-index: 2;
   will-change: transform;
+  cursor: pointer!important;
   pointer-events: auto;
 }
 cg-board piece.dragging {
