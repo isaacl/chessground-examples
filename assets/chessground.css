@@ -48,7 +48,7 @@ cg-board square {
   left: 0;
   width: 12.5%;
   height: 12.5%;
-  pointer-events: none;
+  pointer-events: auto;
 }
 cg-board square.move-dest {
   background: radial-gradient(rgba(20, 85, 30, 0.5) 22%, #208530 0, rgba(0, 0, 0, 0.3) 0, rgba(0, 0, 0, 0) 0);
