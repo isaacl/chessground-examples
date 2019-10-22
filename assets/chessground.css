@@ -92,11 +92,12 @@ cg-board square.current-premove {
   z-index: 2;
   will-change: transform;
   cursor: pointer!important;
-  pointer-events: auto;
+  pointer-events: none;
 }
 cg-board piece.dragging {
   cursor: move;
   z-index: 9;
+  pointer-events: auto;
 }
 cg-board piece.anim {
   z-index: 8;
