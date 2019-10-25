@@ -66,8 +66,7 @@ cg-board square.oc.premove-dest {
 cg-board square.move-dest:hover {
   background: rgba(20, 85, 30, 0.3);
 }
-cg-board square.premove-dest:hover,
-cg-board square.premove-dest.dragover {
+cg-board square.premove-dest:hover {
   background: rgba(20, 30, 85, 0.2);
 }
 cg-board square.last-move {
@@ -92,13 +91,11 @@ cg-board square.current-premove {
   background-size: cover;
   z-index: 2;
   will-change: transform;
-  cursor: pointer!important;
-  pointer-events: none;
+  pointer-events: auto;
 }
 cg-board piece.dragging {
   cursor: move;
   z-index: 9;
-  pointer-events: auto;
 }
 cg-board piece.anim {
   z-index: 8;
@@ -108,7 +105,8 @@ cg-board piece.fading {
   opacity: 0.5;
 }
 .cg-wrap square.move-dest:hover,
-.cg-wrap square.move-dest.dragover {
+.cg-wrap square.move-dest.dragover
+ {
   background-color: rgba(20, 85, 30, 0.3);
 }
 
